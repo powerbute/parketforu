@@ -49,7 +49,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-4 px-4 lg:px-24 py-32 text-white object-fill' style={{ background: "url(/parket.jpg)" }}>
+        <div className='flex flex-col gap-4 px-4 lg:px-24 py-32 text-white object-fill' style={{ background: "url(/parketdark.jpg)" }}>
           <div className='text-xl md:text-4xl font-bold'>Работаем с 2000 года</div>
           <div className='text-3xl md:text-7xl font-black'>Паркет по Москве и области</div>
           <div className='text-lg md:text-2xl font-semibold'><span className='bg-yellow-700 bg-opacity-80'>Вдохните жизнь в ваши пространства с помощью качественного паркета от ParketForU!</span> Наш интернет-магазин предлагает широкий ассортимент стильного и долговечного паркета, который добавит уют и элегантность в любой интерьер</div>
@@ -61,7 +61,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className='flex flex-col'>
-          <div className='flex flex-col xl:flex-row gap-4 items-center justify-between px-4 lg:px-72 py-6'>
+          <div className='flex flex-col xl:flex-row gap-4 xl:items-center justify-between px-4 lg:px-72 py-6'>
             <div className='flex gap-3 items-center text-3xl font-bold'>
               <MdDiscount />
               Лучшая цена
