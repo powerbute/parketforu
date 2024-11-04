@@ -260,7 +260,7 @@ function Filter({ props }: { props: { name: any, vars: any, open: any } }) {
       {open &&
         <div className='max-h-48 overflow-y-auto'>
           {props.vars?.map((e: any) =>
-            <FilterOption props={{ name: e?.name, key: e?.key, filter: props.name }} />
+            <FilterOption key={e?.name + "_" + e?.key + "filterOption" + "_" + props.name} props={{ name: e?.name, key: e?.key, filter: props.name }} />
           )}
         </div>
       }

@@ -130,32 +130,3 @@ export default function HomePage() {
     </main>
   );
 }
-
-function Filter({ props }: { props: { name: any, vars: any, open: any } }) {
-  const [open, setOpen] = React.useState(props.open);
-  return (
-    <div className='flex flex-col gap-1 select-none'>
-      <div onClick={() => setOpen(!open)} className='text-lg font-semibold flex items-center justify-between'>{props.name}
-        {open ? <AiOutlineUp /> : <AiOutlineDown />}
-      </div>
-      {open &&
-        <div className='max-h-48 overflow-y-auto'>
-          {props.vars?.map((e: any) =>
-            <FilterOption props={{ name: e?.name, key: e?.key, filter: props.name }} />
-          )}
-        </div>
-      }
-    </div>
-  )
-}
-
-function FilterOption({ props }: { props: { name: any, key: any, filter: any } }) {
-  const [select, setSelect] = React.useState(false);
-  return (
-    <div onClick={() => setSelect(!select)} key={props.filter + "FILTER_" + props.key} className='flex items-center gap-2 cursor-pointer'>
-      {select == true && <div className='w-4 h-4 rounded-md bg-green-500'></div>}
-      {select == false && <div className='w-4 h-4 rounded-md bg-gray-200'></div>}
-      <div>{props.name}</div>
-    </div>
-  )
-}
