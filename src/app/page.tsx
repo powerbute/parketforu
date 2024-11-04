@@ -39,11 +39,11 @@ export default function HomePage() {
         <div className='px-4 lg:px-24 py-4 bg-dark text-white flex flex-col gap-2 md:flex-row justify-between'>
           <div className='text-5xl font-black'>ParketForU</div>
           <div className='flex items-center gap-2'>
-            <div className='bg-green-600 font-semibold hover:bg-green-700 cursor-pointer select-none px-4 py-2 rounded-2xl flex items-center gap-2'>
+            <div onClick={() => window.open("/catalog", "_self")} className='bg-green-600 font-semibold hover:bg-green-700 cursor-pointer select-none px-4 py-2 rounded-2xl flex items-center gap-2'>
               <FaBook />
               <div>Каталог</div>
             </div>
-            <div className='bg-stone-800 font-semibold hover:bg-stone-900 cursor-pointer select-none px-4 py-2 rounded-2xl flex items-center gap-2'>
+            <div onClick={() => window.open("/cart", "_self")} className='bg-stone-800 font-semibold hover:bg-stone-900 cursor-pointer select-none px-4 py-2 rounded-2xl flex items-center gap-2'>
               <FaShoppingCart />
               <div>1</div>
             </div>
@@ -54,7 +54,7 @@ export default function HomePage() {
           <div className='text-3xl md:text-7xl font-black'>Паркет по Москве и области</div>
           <div className='text-lg md:text-2xl font-semibold'><span className='bg-yellow-700 bg-opacity-80'>Вдохните жизнь в ваши пространства с помощью качественного паркета от ParketForU!</span> Наш интернет-магазин предлагает широкий ассортимент стильного и долговечного паркета, который добавит уют и элегантность в любой интерьер</div>
           <div className='flex gap-2'>
-            <div className='bg-green-600 font-semibold hover:bg-green-700 cursor-pointer select-none px-4 py-2 rounded-2xl flex items-center gap-2'>
+            <div onClick={() => window.open("/catalog", "_self")} className='bg-green-600 font-semibold hover:bg-green-700 cursor-pointer select-none px-4 py-2 rounded-2xl flex items-center gap-2'>
               <FaBook />
               <div>Каталог</div>
             </div>
